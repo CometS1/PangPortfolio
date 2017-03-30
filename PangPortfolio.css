@@ -1,0 +1,231 @@
+html{
+	background: #87CEEB; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#87CEEB, #FFFFFF); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#87CEEB, #FFFFFF); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#87CEEB, #FFFFFF); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#87CEEB, #FFFFFF); /* Standard syntax */
+}
+
+a{
+	text-decoration:none;
+}
+
+a:hover{
+	font-weight: bold;
+}
+
+*{
+margin: 0; 
+padding: 0;
+line-height: 1.5;
+}
+
+p{
+	font-size:20px;
+}
+
+.center {
+
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 500px;
+	text-align: center;
+	background: url(Images/Earth.jpg) no-repeat center;
+    background-size: cover;
+	margin-bottom: 100px;
+	box-shadow: 5px 5px 5px grey;
+}
+
+.center h1{
+	text-align:center;
+	font-family:Georgia;
+	font-size:60px;
+	color:#F5F5F5;
+	padding-top: 5px;
+}
+
+.center p{
+	text-align:center;
+	font-family:Georgia;
+	color:#f2f2f2;
+	margin-top: 0;
+}
+
+.summary{
+	position:relative;
+	margin:auto;
+	width: 40%;
+	word-wrap: break-word;
+	margin-bottom: 100px;
+}
+
+.summary h2{
+	text-align:center;
+	font-family:Georgia;
+	font-size:40px;
+	color:black;
+	margin-bottom: 50px;
+}
+
+.summary p{
+	text-align:center;
+	font-family:Georgia;
+	color:black;
+}
+
+.link_images{
+	margin:auto;
+	width:50%;
+	height:500px;
+	border: 2px solid black;
+	overflow:auto; 
+	margin-bottom: 100px;
+}
+
+.objective_image{
+	position: relative;
+	float:left;
+	width:50%;
+	height:50%;
+}
+
+.experience_image{
+	position: relative;
+	float:right;
+	width:50%;
+	height:50%;
+	clear:right;
+}
+
+.skills_image{
+	position: relative;
+	float:left;
+	width:50%;
+	height:50%;
+	clear:left;
+}
+
+
+.education_image{
+	position: relative;
+	float:right;
+	width:50%;
+	height:50%;
+}
+
+.objective_image:hover, .experience_image:hover, .skills_image:hover, .education_image:hover, .education a:hover{
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+
+.objective{
+	position:relative;
+	margin:auto;
+	width: 50%;
+	word-wrap: break-word;
+	margin-bottom: 100px;
+}
+
+.objective h3{
+	font-family:Georgia;
+	font-size:30px;
+	margin-bottom: 20px;
+}
+
+.objective p{
+	font-family:Georgia;
+	margin-top: 0;
+	margin-bottom: 50px;
+}
+
+.experience{
+	position:relative;
+	margin:auto;
+	width: 50%;
+	word-wrap: break-word;
+	margin-bottom: 100px;
+}
+
+.experience h4{
+	font-family:Georgia;
+	font-size:30px;
+	margin-bottom: 20px;
+}
+
+.experience p{
+	font-family:Georgia;
+	margin-top: 0;
+	margin-bottom: 50px;
+}
+
+.skills{
+	position:relative;
+	margin:auto;
+	width: 50%;
+	word-wrap: break-word;
+	margin-bottom: 100px;
+}
+
+.skills h5{
+	font-family:Georgia;
+	font-size:30px;
+	margin-bottom: 20px;
+}
+
+.skills p{
+	font-family:Georgia;
+	margin-top: 0;
+	margin-bottom: 50px;
+}
+
+.education{
+	position:relative;
+	margin:auto;
+	width: 50%;
+	word-wrap: break-word;
+	margin-bottom: 100px;
+}
+
+.education h6{
+	font-family:Georgia;
+	font-size:30px;
+	margin-bottom: 20px;
+}
+
+.education p{
+	font-family:Georgia;
+	margin-top: 0;
+	margin-bottom: 50px;
+}
+
+.education img{
+	display: block;
+    margin: auto;
+    width: 100%;
+	margin-bottom: 50px;
+}
+
+.education a{
+	display: block;
+    margin: auto;
+    width: 40%;
+}
+
+.footer {
+	position: relative;
+	height: 50px;
+	background-color: #668284;
+	clear: both;
+	font-family: Verdana, sans-serif;
+	font-size: 14px;
+	text-align: center;
+	color: #ffffff;
+}
+
+.footer p {
+	position: relative;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size:16px;
+}
