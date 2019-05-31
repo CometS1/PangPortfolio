@@ -1,55 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
+
+<head>
 	<meta charset="UTF-8" />
-		<title>Shawn Pang's Web Portfolio</title>
-		<link type="text/css" rel="stylesheet" href="PangPortfolio.css"/>
-	</head>
-	<body>
-		<div class="center">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+	<title>Shawn Pang's Web Portfolio</title>
+	<link type="text/css" rel="stylesheet" href="PangPortfolio.css" />
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">Portfolio</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="about.html">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="skills.html">Skills</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="center">
 		<h1> Shawn Pang </h1>
 		<p>Web Page Resume</p>
-		</div>
-		<div class="summary">
+	</div>
+	<div class="summary">
 		<h2>Summary</h2>
-		<p>This is an interactive web page resume I created to demonstrate my abilities using HTML and CSS. If you wish to learn more about me, click on the various images below to look at parts of my resume or scroll down to see them. </p>
-		</div>
-		<div class="link_images">
-		<a href="ShawnPang.html#objective_paragraph"><img src="Images/objective_image.jpg" class="objective_image" alt="Objective Image"></a>
-		<a href="ShawnPang.html#experience_paragraph"><img src="Images/experience.jpg" class="experience_image" alt="Experience Image"></a>
-		<a href="ShawnPang.html#skills_paragraph"><img src="Images/Skills_image.jpg" class="skills_image" alt="Skills Image"></a>
-		<a href="ShawnPang.html#education_paragraph"><img src="Images/Education_Image.jpg" class="education_image" alt="Education Image"></a>
-		</div>
-		<div id="objective_paragraph" class="objective">
+		<p>This is an interactive web page resume I created to demonstrate my abilities using HTML and CSS. If you wish
+			to learn more about me, click on the various images below to look at parts of my resume or scroll down to
+			see them. </p>
+	</div>
+	<div class="link_images">
+		<a href="ShawnPang.html#objective_paragraph"><img src="Images/objective_image.jpg" class="objective_image"
+				alt="Objective Image"></a>
+		<a href="ShawnPang.html#experience_paragraph"><img src="Images/experience.jpg" class="experience_image"
+				alt="Experience Image"></a>
+		<a href="ShawnPang.html#skills_paragraph"><img src="Images/Skills_image.jpg" class="skills_image"
+				alt="Skills Image"></a>
+		<a href="ShawnPang.html#education_paragraph"><img src="Images/Education_Image.jpg" class="education_image"
+				alt="Education Image"></a>
+	</div>
+	<div id="objective_paragraph" class="objective">
 		<h3>Objective</h3>
-		<p>I am currently searching for a job within web development which will both test and develop my skills as a web developer.</p>
+		<p>I am currently searching for a job within web development which will both test and develop my skills as a web
+			developer.</p>
 		<hr>
-		</div>
-		<div id="experience_paragraph" class="experience">
+	</div>
+	<div id="experience_paragraph" class="experience">
 		<h4>Experience</h4>
-		<p>&#45; Collaborates with others to create clean interfaces and simple, intuitive interactions and experiences.  <br/><br/> 
-		&#45; Develops project concepts and maintains optimal workflow. <br/><br/> 
-		&#45; Tests code for error and glitches; debugged code to improve performance. <br/><br/>
-		&#45; Designed and coded applications to sort, compare, process, and store data. <br/><br/>
-		&#45; Implemented a login system, storing usernames and passwords in a database and verifying the validity of login credentials. <br/><br/>
+		<p>&#45; Collaborates with others to create clean interfaces and simple, intuitive interactions and experiences.
+			<br /><br />
+			&#45; Develops project concepts and maintains optimal workflow. <br /><br />
+			&#45; Tests code for error and glitches; debugged code to improve performance. <br /><br />
+			&#45; Designed and coded applications to sort, compare, process, and store data. <br /><br />
+			&#45; Implemented a login system, storing usernames and passwords in a database and verifying the validity
+			of login credentials. <br /><br />
 		</p>
 		<hr>
-		</div>
-		<div id="skills_paragraph" class="skills">
+	</div>
+	<div id="skills_paragraph" class="skills">
 		<h5>Skills</h5>
-		<p>	&#45; Operating Systems&#58; Windows, UNIX, Linux<br/><br/>
-			&#45; Programming Languages&#58; C, C++, Java, JavaScript, HTML, PHP, CSS, Python, SQL<br/><br/>
-			&#45; Office Package&#58; Microsoft Word, Microsoft PowerPoint, Microsoft Excel<br/><br/>
+		<p> &#45; Operating Systems&#58; Windows, UNIX, Linux<br /><br />
+			&#45; Programming Languages&#58; C, C++, Java, JavaScript, HTML, PHP, CSS, Python, SQL<br /><br />
+			&#45; Office Package&#58; Microsoft Word, Microsoft PowerPoint, Microsoft Excel<br /><br />
 		</p>
 		<hr>
-		</div>
-		<div id="education_paragraph" class="education">
+	</div>
+	<div id="education_paragraph" class="education">
 		<h6>Education</h6>
-		<p>I have a diploma in Computer Programming &#40;CPD&#41; which I received from Seneca College of Applied Arts and Technology.</p>
-		<a href="http://www.senecacollege.ca/fulltime/CPD.html"><img src="Images/seneca_college_image.jpg" alt="Seneca Logo"/></a>
+		<p>I have a diploma in Computer Programming &#40;CPD&#41; which I received from Seneca College of Applied Arts
+			and Technology.</p>
+		<a href="http://www.senecacollege.ca/fulltime/CPD.html"><img src="Images/seneca_college_image.jpg"
+				alt="Seneca Logo" /></a>
 		<hr>
-		</div>
-		<div class="footer">
-		</div>
-	</body>
+	</div>
+	<div class="footer">
+	</div>
+</body>
+
 </html>
