@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
     <title>Shawn Pang's Web Portfolio</title>
     <link type="text/css" rel="stylesheet" href="styles/styles.css" />
@@ -45,14 +46,106 @@
         </div>
     </nav>
 
-    <div id="skills_paragraph" class="skills">
-		<h5>Skills</h5>
-		<p> &#45; Operating Systems&#58; Windows, UNIX/Linux<br /><br />
-			&#45; Programming Languages&#58; C, C++, Java, JavaScript,  jQuery, HTML, PHP, CSS,  Node.js, Bootstrap, SQL, Ruby, Ruby on Rails, React, React Native, AngularJS, Objective-C, Swift, Android Developer, Xcode<br /><br />
-			&#45; Office Package&#58; Microsoft Word, Microsoft PowerPoint, Microsoft Excel<br /><br />
-		</p>
-		<hr>
-	</div>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Skills</h1>
+          <p class="lead">Here are a list of operating systems, programming languages, and and office packages I have experience with.</p>
+        </div>
+      </div>
+
+    <div class="container">
+
+        <!--<div class="d-flex w-100 justify-content-center">
+            <h1>Skills</h1>
+        </div>-->
+
+        <br />
+
+        <div class="list-group">
+            <div class="d-flex w-100 justify-content-center">
+                <h4>Operating Systems</h4>
+            </div>
+            <div class="d-flex justify-content-center">
+                <br />
+                <ul class="list-group list-group-horizontal">
+                    <button type="button" class="list-group-item">Windows</button>
+                    <button type="button" class="list-group-item">UNIX/Linux</button>
+                </ul>
+            </div>
+        </div>
+
+        <br />
+
+        <div class="list-group">
+            <div class="d-flex w-100 justify-content-center">
+                <h4>Programming Languages</h4>
+            </div>
+            <div class="d-flex flex-wrap justify-content-center">
+                <ul class="list-group list-group-horizontal">
+                    <a href="#" class="list-group-item list-group-item-action">C</a>
+                    <a href="#" class="list-group-item list-group-item-action">C++</a>
+                    <a href="#" class="list-group-item list-group-item-action">Java</a>
+                    <a href="#" class="list-group-item list-group-item-action">JavaScript</a>
+                    <a href="#" class="list-group-item list-group-item-action">jQuery</a>
+                    <a href="#" class="list-group-item list-group-item-action">HTML</a>
+                    <a href="#" class="list-group-item list-group-item-action">PHP</a>
+                    <a href="#" class="list-group-item list-group-item-action">CSS</a>
+                    <a href="#" class="list-group-item list-group-item-action">Node.js</a>
+                    <a href="#" class="list-group-item list-group-item-action">Bootstrap</a>
+                    <!--
+                <button type="button" class="list-group-item list-group-item-action">C</button>
+                <button type="button" class="list-group-item list-group-item-action">C++</button>
+                <button type="button" class="list-group-item list-group-item-action">Java</button>
+                <button type="button" class="list-group-item list-group-item-action">JavaScript</button>
+                <button type="button" class="list-group-item list-group-item-action">jQuery</button>
+                <button type="button" class="list-group-item list-group-item-action">HTML</button>
+                <button type="button" class="list-group-item list-group-item-action">PHP</button>
+                <button type="button" class="list-group-item list-group-item-action">CSS</button>
+                <button type="button" class="list-group-item list-group-item-action">Node.js</button>
+                <button type="button" class="list-group-item list-group-item-action">Bootstrap</button>
+                <button type="button" class="list-group-item list-group-item-action">SQL</button>
+                <button type="button" class="list-group-item list-group-item-action">Ruby</button>
+                <button type="button" class="list-group-item list-group-item-action">Ruby on Rails</button>
+                <button type="button" class="list-group-item list-group-item-action">React</button>
+                <button type="button" class="list-group-item list-group-item-action">React Native</button>
+                <button type="button" class="list-group-item list-group-item-action">AngularJS</button>
+                <button type="button" class="list-group-item list-group-item-action">Objective-C</button>
+                <button type="button" class="list-group-item list-group-item-action">Swift</button>
+                <button type="button" class="list-group-item list-group-item-action">Android Developer</button>
+                <button type="button" class="list-group-item list-group-item-action">Xcode</button>
+            -->
+                </ul>
+                <ul class="list-group list-group-horizontal">
+                    <a href="#" class="list-group-item list-group-item-action">SQL</a>
+                    <a href="#" class="list-group-item list-group-item-action">Ruby</a>
+                    <a href="#" class="list-group-item list-group-item-action">Ruby on Rails</a>
+                    <a href="#" class="list-group-item list-group-item-action">React</a>
+                    <a href="#" class="list-group-item list-group-item-action">React Native</a>
+                    <a href="#" class="list-group-item list-group-item-action">AngularJS</a>
+                    <a href="#" class="list-group-item list-group-item-action">Objective-C</a>
+                    <a href="#" class="list-group-item list-group-item-action">Swift</a>
+                    <a href="#" class="list-group-item list-group-item-action">Android Developer</a>
+                    <a href="#" class="list-group-item list-group-item-action">Xcode</a>
+                </ul>
+            </div>
+        </div>
+
+        <br />
+
+        <div class="list-group">
+            <div class="d-flex w-100 justify-content-center">
+                <h4>Office Package</h4>
+            </div>
+            <div class="d-flex justify-content-center">
+                <ul class="list-group list-group-horizontal">
+                    <button type="button" class="list-group-item">Microsoft Word</button>
+                    <button type="button" class="list-group-item">Microsoft PowerPoint</button>
+                    <button type="button" class="list-group-item">Microsoft Excel</button>
+                </ul>
+            </div>
+        </div>
+
+    </div>
 
     <div class="footer">
     </div>
