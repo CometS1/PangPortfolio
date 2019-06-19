@@ -27,7 +27,8 @@ div .list-group {
 }
 
 i {
-  margin-right: 0.5em;
+  color: black;
+  text-decoration: none;
 }
 
 ul {
@@ -35,15 +36,27 @@ ul {
   white-space: nowrap;
 }
 
-/*nav{
-    background-color: dodgerblue !important;
-}*/
-a i {
+a {
   color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold !important;
+}
+
+div .list-group {
+  text-align: center;
 }
 
 /*Used for boxes*/
 .list-box {
+  padding: 2em 5em 2em 2em;
+  margin: 2em;
+  border-width: 0.2em !important;
+}
+
+.list-box-thick {
   padding: 5em;
   margin: 2em;
   border-width: 1em !important;
