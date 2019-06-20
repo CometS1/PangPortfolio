@@ -11,10 +11,6 @@ button {
   text-align: center;
 }
 
-div .list-group {
-  text-align: center;
-}
-
 .footer {
   position: relative;
   margin-top: 2em;
@@ -41,7 +37,7 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+li a:hover {
   font-weight: bold !important;
 }
 
@@ -51,15 +47,22 @@ div .list-group {
 
 /*Used for boxes*/
 .list-box {
+  background-color: #FFFFFF;
   padding: 2em 5em 2em 2em;
   margin: 2em;
   border-width: 0.2em !important;
 }
 
 .list-box-thick {
+  background-color: #FFFFFF;
   padding: 5em;
   margin: 2em;
   border-width: 1em !important;
+}
+
+.paragraph {
+  background-color: #FFFFFF;
+  padding: 5em;
 }
 
 /*# sourceMappingURL=styles.css.map */
