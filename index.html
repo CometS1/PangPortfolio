@@ -8,11 +8,12 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
 	<title>Shawn Pang's Web Portfolio</title>
-	<link type="text/css" rel="stylesheet" href="PangPortfolio.css" />
-	<!--<link type="text/css" rel="stylesheet" href="styles/styles.css" />-->
+	<!--<link type="text/css" rel="stylesheet" href="PangPortfolio.css" />-->
+	<link type="text/css" rel="stylesheet" href="styles/styles.css" />
+	<script src="jquery/jquery-3.4.1.min.js"></script>
+	<link href="fontawesome-free-5.8.2-web/fontawesome-free-5.8.2-web/css/all.css" rel="stylesheet">
 </head>
 
 <body>
@@ -35,11 +36,11 @@
 					<a class="nav-link" href="skills.html">Skills</a>
 				</li>
 				<li class="nav-item">
-                    <a class="nav-link" href="education.html">Education</a>
+					<a class="nav-link" href="education.html">Education</a>
 				</li>
 				<li class="nav-item">
-                    <a class="nav-link" href="experience.html">Experience</a>
-                </li>
+					<a class="nav-link" href="experience.html">Experience</a>
+				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="contact.html">Contact</a>
 				</li>
@@ -49,31 +50,27 @@
 
 	<div class="jumbotron jumbotron-fluid">
 		<div class="container">
-		  <h1 class="display-4">Shawn Pang</h1>
-		  <p class="lead">This web portfolio is meant to show more about myself.</p>
+			<h1 class="display-4"><strong>Shawn Pang</strong></h1>
+			<p class="lead">This website contains details about me personally, from more about me to my skills.</p>
 		</div>
-	  </div>
+	</div>
 
-	<div class="center">
-		<h1> Shawn Pang </h1>
-		<p>Web Page Resume</p>
+	<div class="container">
+		<div class="container border border-dark rounded list-box-round centered">
+				<img src="Images/Pang_portrait.png" class="img-fluid mx-auto" alt="Responsive image">
+			<p class="lead story">I'm doing fine. I'm making this website portfolio to show off my capabilities for creating 
+			</p>
+		</div>
 	</div>
-	<div class="summary">
-		<h2>Summary</h2>
-		<p>This is an interactive web page resume I created to demonstrate my abilities using HTML and CSS. If you wish
-			to learn more about me, click on the various images below to look at parts of my resume or scroll down to
-			see them. </p>
-	</div>
-	<div class="link_images">
-		<a href="ShawnPang.html#objective_paragraph"><img src="Images/objective_image.jpg" class="objective_image"
-				alt="Objective Image"></a>
-		<a href="ShawnPang.html#experience_paragraph"><img src="Images/experience.jpg" class="experience_image"
-				alt="Experience Image"></a>
-		<a href="ShawnPang.html#skills_paragraph"><img src="Images/Skills_image.jpg" class="skills_image"
-				alt="Skills Image"></a>
-		<a href="ShawnPang.html#education_paragraph"><img src="Images/Education_Image.jpg" class="education_image"
-				alt="Education Image"></a>
-	</div>
+
+	<div class="fillerDiv"></div>
+
+	<script>
+		$(function () {
+			$('.footer').load('footer.html');
+		})
+	</script>
+
 	<div class="footer">
 	</div>
 </body>

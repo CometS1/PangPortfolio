@@ -1,104 +1,136 @@
-$primary-color: #87CEEB;
-$secondary-color: #FFFFFF;
+$primary-color: #87ceeb;
+$secondary-color: #ffffff;
 $background-color: #cfebfd;
 
-%radial-gradient-background{
-    background-image: radial-gradient($primary-color, $secondary-color);
+%radial-gradient-background {
+  background-image: radial-gradient($primary-color, $secondary-color);
 }
 
-%radial-gradient-background-reverse{
-    background-image: radial-gradient($secondary-color, $primary-color);
+%radial-gradient-background-reverse {
+  background-image: radial-gradient($secondary-color, $primary-color);
 }
 
 %blue-white-gradient {
-    background: $primary-color; /* For browsers that do not support gradients */
-	background: -webkit-linear-gradient($primary-color, $secondary-color); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient($primary-color, $secondary-color); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient($primary-color, $secondary-color); /* For Firefox 3.6 to 15 */
-    background: linear-gradient($primary-color, $secondary-color); /* Standard syntax */
+  background: $primary-color; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient($primary-color, $secondary-color); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient($primary-color, $secondary-color); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient($primary-color, $secondary-color); /* For Firefox 3.6 to 15 */
+  background: linear-gradient($primary-color, $secondary-color); /* Standard syntax */
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  /*@extend %radial-gradient-background-reverse;*/
+  background-color: $background-color;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+button {
+  text-align: center;
+}
+
+.jumbotron {
+  @extend %radial-gradient-background-reverse;
+  margin-top: 4em;
+  text-align: center;
+}
+
+i {
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+li a:hover {
+  font-weight: bold !important;
+}
+
+div {
+  .central {
+    @extend %radial-gradient-background-reverse;
   }
 
-  html,body { height: 100%;}
-
-body{
-    /*@extend %radial-gradient-background-reverse;*/
-    background-color: $background-color;
-    display: table;
-    width: 100%; 
-    /*position: relative;
-    height: 100%;
-    margin-bottom: 7em;*/
-}
-
-button{
-    text-align: center
-}
-
-.jumbotron{
-    @extend %radial-gradient-background-reverse;
-}
-
-i{
-    color: black;
-    text-decoration: none;
-}
-
-ul{
-    vertical-align: middle;
-    white-space: nowrap;
-}
-
-a{
-    color: black;
-    text-decoration: none;
-}
-
-li a:hover{
-    font-weight:bold !important;
-}
-
-div{
-    .central{
-        @extend %radial-gradient-background-reverse;
-    }
-    
-    .list-group{
-        text-align: center;
-        margin-bottom:1em;
-    }
+  .list-group {
+    text-align: center;
+    margin-bottom: 1em;
+  }
 }
 
 /*Used for boxes*/
-.list-box{
-    background-color: $secondary-color;
-    padding:2em 5em 2em 2em;
-    margin: 2em;
-    border-width: 0.2em !important;
+.list-box {
+  background-color: $secondary-color;
+  padding: 2em 5em 2em 2em;
+  margin: 2em;
+  border-width: 0.2em !important;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
 }
 
-.list-box-thick{
-    background-color: $secondary-color;
-    padding:5em;
-    margin: 2em;
-    border-width: 1em !important;
+.list-box-round {
+  background-color: $secondary-color;
+  padding: 2em 5em 2em 2em;
+  margin: 2em;
+  border-width: 0.2em !important;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+  border-radius: 300px 300px 300px 300px !important;
 }
 
-.paragraph{
-    background-color: $secondary-color;
-    padding:5em;
+.list-box-thick {
+  background-color: $secondary-color;
+  padding: 5em;
+  margin: 2em;
+  border-width: 1em !important;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
 }
 
-.navbar{
-    background-color: $secondary-color;
+.paragraph {
+  background-color: $secondary-color;
+  padding: 5em;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: $secondary-color;
 }
 
 .footer {
-    position: relative;
-    padding:1em;
-    margin-top:1em;
-	font-family: Verdana, sans-serif;
-	text-align: center;
-    color: #000000;
-    display: table-row;
-    @extend %radial-gradient-background-reverse;
+  padding: 1em;
+  margin-top: 1em;
+  font-family: Verdana, sans-serif;
+  text-align: center;
+  color: #000000;
+  @extend %radial-gradient-background-reverse;
+}
+
+//Uses flex to fill in extra space so footer stays at bottom
+.fillerDiv {
+  visibility: hidden;
+  height: 100%;
+  position: relative;
+  flex: 1;
+}
+
+.story {
+  margin-left: 3em;
+}
+
+.centered {
+  text-align: center;
 }

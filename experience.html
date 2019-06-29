@@ -12,6 +12,7 @@
     <title>Shawn Pang's Web Portfolio</title>
     <link type="text/css" rel="stylesheet" href="styles/styles.css" />
     <link href="fontawesome-free-5.8.2-web/fontawesome-free-5.8.2-web/css/all.css" rel="stylesheet">
+    <script src="jquery/jquery-3.4.1.min.js"></script>
 </head>
 
 <body>
@@ -103,14 +104,17 @@
         </div>
     </div>
 
+    <div class="fillerDiv"></div>
+
+    <script>
+        $(function () {
+            $('.footer').load('footer.html');
+        })
+    </script>
+
     <div class="footer">
-        <a href="http://www.linkedin.com/in/shawn-pang-5ab245127 ">
-            <i class="fab fa-linkedin-in fa-3x"></i>
-        </a>
-        <a href="https://github.com/CometS1">
-            <i class="fab fa-github fa-3x"></i>
-        </a>
     </div>
+
 </body>
 
 </html>

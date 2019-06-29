@@ -1,22 +1,26 @@
 .footer, div .central, .jumbotron {
-  background-image: radial-gradient(#FFFFFF, #87CEEB);
+  background-image: radial-gradient(#ffffff, #87ceeb);
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
 body {
   /*@extend %radial-gradient-background-reverse;*/
   background-color: #cfebfd;
-  display: table;
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  /*position: relative;
-  height: 100%;
-  margin-bottom: 7em;*/
 }
 
 button {
+  text-align: center;
+}
+
+.jumbotron {
+  margin-top: 4em;
   text-align: center;
 }
 
@@ -46,36 +50,64 @@ div .list-group {
 
 /*Used for boxes*/
 .list-box {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 2em 5em 2em 2em;
   margin: 2em;
   border-width: 0.2em !important;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+}
+
+.list-box-round {
+  background-color: #ffffff;
+  padding: 2em 5em 2em 2em;
+  margin: 2em;
+  border-width: 0.2em !important;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+  border-radius: 300px 300px 300px 300px !important;
 }
 
 .list-box-thick {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 5em;
   margin: 2em;
   border-width: 1em !important;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
 }
 
 .paragraph {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 5em;
 }
 
 .navbar {
-  background-color: #FFFFFF;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #ffffff;
 }
 
 .footer {
-  position: relative;
   padding: 1em;
   margin-top: 1em;
   font-family: Verdana, sans-serif;
   text-align: center;
   color: #000000;
-  display: table-row;
+}
+
+.fillerDiv {
+  visibility: hidden;
+  height: 100%;
+  position: relative;
+  flex: 1;
+}
+
+.story {
+  margin-left: 3em;
+}
+
+.centered {
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
