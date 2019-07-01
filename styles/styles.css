@@ -48,6 +48,10 @@ div .list-group {
   margin-bottom: 1em;
 }
 
+.list-group-item {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+}
+
 /*Used for boxes*/
 .list-box {
   background-color: #ffffff;
