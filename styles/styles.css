@@ -8,7 +8,6 @@ body {
 }
 
 body {
-  /*@extend %radial-gradient-background-reverse;*/
   background-color: #cfebfd;
   display: flex;
   flex-direction: column;

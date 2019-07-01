@@ -1,6 +1,6 @@
 $primary-color: #87ceeb;
 $secondary-color: #ffffff;
-$background-color: #cfebfd;
+$secondary-color-dark: #cfebfd;
 
 %radial-gradient-background {
   background-image: radial-gradient($primary-color, $secondary-color);
@@ -24,8 +24,7 @@ body {
 }
 
 body {
-  /*@extend %radial-gradient-background-reverse;*/
-  background-color: $background-color;
+  background-color: $secondary-color-dark;
   display: flex;
   flex-direction: column;
   width: 100%;
