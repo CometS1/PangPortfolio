@@ -63,7 +63,7 @@ div .list-group {
 .list-box-round {
   background-color: #ffffff;
   padding: 2em 5em 2em 2em;
-  margin: 2em;
+  margin-bottom: 2em;
   border-width: 0.2em !important;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
   border-radius: 300px 300px 300px 300px !important;
@@ -72,7 +72,7 @@ div .list-group {
 .list-box-thick {
   background-color: #ffffff;
   padding: 5em;
-  margin: 2em;
+  margin-bottom: 2em;
   border-width: 1em !important;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
 }
