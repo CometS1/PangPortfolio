@@ -92,6 +92,15 @@ div {
   border-radius: 300px 300px 300px 300px !important;
 }
 
+.list-box-picture {
+  background-color: $secondary-color;
+  margin-bottom: 2em;
+  margin-left: 1.5em;
+  margin-right: 0;
+  border-width: 0.2em !important;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+}
+
 .list-box-thick {
   background-color: $secondary-color;
   padding: 5em;
